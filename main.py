@@ -26,23 +26,18 @@ cursor.hideturtle()
 cursor.forward(300)
 cursor.setheading(0)
 
+num_dots = 100
 
-for dot_count in range(10):
+for dot_count in range(1, num_dots +1):
     cursor.dot(20,random.choice(color_list))
     cursor.forward(50)
 
-
-cursor.setheading(90)
-cursor.forward(50)
-cursor.setheading(180)
-cursor.forward(500)
-cursor.setheading(0)
-
-
-for dot_count in range(10):
-    cursor.dot(20,random.choice(color_list))
-    cursor.forward(50)
-
+    if dot_count % 10 == 0:
+        cursor.setheading(90)
+        cursor.forward(50)
+        cursor.setheading(180)
+        cursor.forward(500)
+        cursor.setheading(0)
 
 
 screen = t.Screen()
