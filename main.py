@@ -32,9 +32,16 @@ for dot_count in range(10):
     cursor.forward(50)
 
 
+cursor.setheading(90)
+cursor.forward(50)
+cursor.setheading(180)
+cursor.forward(500)
+cursor.setheading(0)
 
 
-
+for dot_count in range(10):
+    cursor.dot(20,random.choice(color_list))
+    cursor.forward(50)
 
 
 
